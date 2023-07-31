@@ -16,7 +16,7 @@ const Edit = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://10.168.133.11:8000/user/');
+      const response = await axios.get('http://213.131.37.250:8889/user/');
       setData(response.data);
     } catch (err) {
       console.error(err);
@@ -25,7 +25,7 @@ const Edit = () => {
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`http://10.168.133.11:8000/user/${id}/`);
+      await axios.delete(`http://213.131.37.250:8889/user/${id}/`);
       fetchData();
       alert('წარმატებით წაიშალა');
     } catch (err) {
@@ -61,7 +61,7 @@ const Edit = () => {
     };
 
     try {
-      await axios.put(`http://10.168.133.11:8000/user/${editedItem.id}/`, updatedItem, {
+      await axios.put(`http://213.131.37.250:8889/user/${editedItem.id}/`, updatedItem, {
         headers: {
           'Content-Type': 'application/json'
         }
