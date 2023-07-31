@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import App from '../App';
 import Animation from '../components/animation';
 import axios from 'axios';
-import './edit.css'
+import './edit.css';
+import Export from './Export';
+
 
 const Edit = () => {
   const [data, setData] = useState([]);
@@ -76,6 +78,7 @@ const Edit = () => {
   return (
     <div className="container">
       <App />
+      <Export/>
       <div className="info">
         <h2>კომპანიების ჩამონათვალი</h2>
         {data.length > 0 && <p className="length">მონაწილეების რაოდენობა: {data.length}</p>}
