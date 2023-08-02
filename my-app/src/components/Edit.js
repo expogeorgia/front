@@ -97,17 +97,17 @@ const Edit = () => {
                     <form onSubmit={handleFormSubmit} className='form'>
                     <input type="text" name="participant" placeholder="მონაწილე" defaultValue={item.participant} />
                     <input type="text" name="address1" placeholder="იურიდიული მის." defaultValue={item.address1} />
-                    <input type="text" name="address2" defaultValue={item.address2} />
-                    <input type="tel" name="tel" defaultValue={item.tel} />
-                    <input type="tel" name="mob" defaultValue={item.mob} />
-                    <input type="email" name="mail" defaultValue={item.mail} />
-                    <input type="text" name="exhibition" defaultValue={item.exhibition} />
-                    <input type="text" name="contact_person" defaultValue={item.contact_person} />
-                    <input type="text" name="price" defaultValue={item.price} />
-                    <input type="text" name="payed" defaultValue={item.payed} />
-                    <input type="radio" name="status" defaultValue={item.status} />
-                    <input type="text" name="employer" defaultValue={item.employer} />
-                    <input type="date" name="date" defaultValue={item.date} />
+                    <input type="text" name="address2" placeholder="ფაქტიური მის." defaultValue={item.address2} />
+                    <input type="tel" name="tel" placeholder="ტელეფონის ნომერი" defaultValue={item.tel} />
+                    <input type="tel" name="mob" placeholder="ტელეფონის ნომერი" defaultValue={item.mob} />
+                    <input type="email" name="mail" placeholder="ელექტრონული ფოსტა" defaultValue={item.mail} />
+                    <input type="text" name="exhibition" placeholder="გამოფენა" defaultValue={item.exhibition} />
+                    <input type="text" name="contact_person" placeholder="საკონტაქტო პერსონა" defaultValue={item.contact_person} />
+                    <input type="text" name="price" placeholder="ღირებულება" defaultValue={item.price} />
+                    <input type="text" name="payed" placeholder="გადახდილი თანხა" defaultValue={item.payed} />
+                    <input type="checkbox" name="status" placeholder="სტატუსი" defaultValue={item.status} />
+                    <input type="text" name="employer" placeholder="თანამშრომელი" defaultValue={item.employer} />
+                    <input type="date" name="date" placeholder="თარიღი" defaultValue={item.date} />
                     <button type="submit" value="Submit">Save</button>
                   </form>
                 ) : (
