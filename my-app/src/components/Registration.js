@@ -75,9 +75,9 @@ const Registration = () => {
         <label>საკონტაკტო პერსონა</label>
         <input type="text" name="contact_person" value={formData.contact_person} onChange={handleChange} />
         <label>კომპანიის ლოგო</label>
-        <input type="file" name="logo" onChange={handleChange} />
+        <input type="file" accept='image/' name="logo" onChange={handleChange} />
         <label>დამატებითი ფაილი</label>
-        <input type="file" name="file" onChange={handleChange} />
+        <input type="file" accept='image/' name="file" onChange={handleChange} />
         <button type="submit">Submit</button>
       </form>
       </div>
