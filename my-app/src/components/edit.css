@@ -82,4 +82,38 @@ border-radius: 5px;
 }
 
 
+.grdRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1fr);
+    margin-top: 20px;
+    align-items: center;
+}
 
+.column p {
+font-size: 12px;
+display: flex;
+width: 200px;
+height: 20px;
+align-items: center;
+justify-content: center;
+border-right: solid 1px cadetblue;
+border-left: solid 1px cadetblue;
+}
+
+.column-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.column-1 p {
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
