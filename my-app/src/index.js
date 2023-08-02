@@ -12,6 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
     <Routes>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
       <Route element={<Edit/>} path='/' exact="true"/>
       <Route element={<Api/>} path='/api'/>
       <Route element={<Registration/>} path='/Registration'/>
