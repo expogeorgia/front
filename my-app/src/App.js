@@ -1,6 +1,6 @@
 
 import './App.css';
-<<<<<<< HEAD
+
 import { Link } from 'react-router-dom';
 
 function App() {
@@ -14,16 +14,8 @@ function App() {
                 </ul>
             </nav>
           </div>
-=======
-import Api from './components/Api';
 
-function App() {
-  return (
-    <div className="App">
-<Cards/>
-<Api/>
->>>>>>> origin/main
-    </div>
-  );
-}
-export default App;
+</div>
+  )}
+
+  export default App;
