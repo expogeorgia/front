@@ -16,7 +16,7 @@ const Admin = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://10.168.133.11:8000/user/');
+      const response = await fetch('http://213.131.37.250:8889/user/');
       const userReg = await response.json();
       setData(userReg);
     } catch (err) {
@@ -26,7 +26,7 @@ const Admin = () => {
 
   const deleteUser = async (id) => {
     try {
-      await fetch(`http://10.168.133.11:8000/user/${id}/`, {
+      await fetch(`http://213.131.37.250:8889/user/${id}/`, {
         method: 'DELETE',
       });
       fetchData();
@@ -63,7 +63,7 @@ const Admin = () => {
       file: formData.get("file"),
     };
     try {
-      await fetch(`http://10.168.133.11:8000/user/${editedItem.id}/`, {
+      await fetch(`http://213.131.37.250:8889/user/${editedItem.id}/`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

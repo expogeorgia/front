@@ -4,7 +4,7 @@ import { saveAs } from 'file-saver';
 
 const exportData = async () => {
   try {
-    const response = await axios.get('http://10.168.133.11:8000/user/');
+    const response = await axios.get('http://213.131.37.250:8889/user/');
     const users = response.data;
 
     // Convert the data to the desired format (e.g., CSV or JSON)
