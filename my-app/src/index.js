@@ -6,6 +6,7 @@ import Api from './components/Api';
 import Registration from './components/Registration';
 import Admin from './components/Admin';
 import Edit from './components/Edit';
+import User from './components/User'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
       <Route element={<Registration/>} path='/Registration'/>
       <Route element={<Admin/>} path='/Admin'/>
       <Route element={<Edit/>} path='/Edit'/>
+      <Route element={<User/>} path='/User'/>
     </Routes>
     </HashRouter>
 );

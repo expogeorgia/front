@@ -18,8 +18,10 @@ const Edit = () => {
     try {
       const response = await axios.get('http://213.131.37.250:8889/user/');
       setData(response.data);
+      console.log('good')
     } catch (err) {
       console.error(err);
+      console.log('test');
     }
   };
 

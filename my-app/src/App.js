@@ -11,6 +11,7 @@ function App() {
                 <ul>
                     <li><Link className='navi' to='/Registration'>Registration</Link></li>
                     <li><Link className='navi' to='/Edit'>Edit</Link></li>
+                    <li><Link className='navi' to='/User'>User</Link></li>
                 </ul>
             </nav>
           </div>
