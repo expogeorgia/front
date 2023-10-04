@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import App from '../App';
+import Animation from './animation';
 
 const API_URL = 'http://213.131.37.250:8889/user/';
 
@@ -108,10 +109,12 @@ const Userlist = () => {
   return (
     <div className='container'>
     <App/>
+    <Animation>
       <h1>User Management</h1>
       <User users={users} onEdit={(user) => setEditingUser(user)} onDelete={handleDeleteUser} />
       <h2>{editingUser ? 'Edit User' : 'Add User'}</h2>
       <UserForm onSubmit={editingUser ? handleEditUser : handleAddUser} user={editingUser || {}} />
+    </Animation>
     </div>
   );
 };
